@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro da Startup</h1>
+        <p>Preencha as informações abaixo para continuar.</p>
+    </header>
+
+    <main>
+        <form id="cadastro-form">
+            <div class="form-group">
+                <label for="nome">Nome da Startup</label>
+                <input type="text" id="nome" placeholder="Ex: TechVision">
+            </div>
+            <div class="form-group">
+                <label for="razao">Razão Social</label>
+                <input type="text" id="razao" placeholder="Ex: TechVision Ltda">
+            </div>
+            <div class="form-group">
+                <label for="cnpj">CNPJ</label>
+                <input type="text" id="cnpj" placeholder="00.000.000/0000-00">
+            </div>
+            <div class="form-group">
+                <label for="setor">Setor de Atuação</label>
+                <select id="setor">
+                    <option value="">Selecione...</option>
+                    <option value="tecnologia">Tecnologia</option>
+                    <option value="educacao">Educação</option>
+                    <option value="saude">Saúde</option>
+                    <option value="financas">Finanças</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="estrutura">Estrutura da Startup</label>
+                <select id="estrutura">
+                    <option value="">Selecione...</option>
+                    <option value="micro">Micro (até 10 funcionários)</option>
+                    <option value="pequena">Pequena (11 a 50 funcionários)</option>
+                    <option value="media">Média (51 a 100 funcionários)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="modelo">Modelo de Negócio</label>
+                <select id="modelo">
+                    <option value="">Selecione...</option>
+                    <option value="b2b">B2B</option>
+                    <option value="b2c">B2C</option>
+                    <option value="ambos">Ambos</option>
+                </select>
+            </div>
+            <div class="form-group checkbox-group">
+                <label>Utiliza Inteligência Artificial?</label>
+                <div>
+                    <input type="checkbox" id="ia-sim">
+                    <label for="ia-sim">Sim</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ia-nao">
+                    <label for="ia-nao">Não</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="window.location.href='pagamento.html'">Contratar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pagamento</h1>
+        <p>Insira as informações do seu cartão para concluir o pagamento.</p>
+    </header>
+
+    <main>
+        <form id="pagamento-form">
+            <div class="form-group">
+                <label for="nome-cartao">Nome no Cartão</label>
+                <input type="text" id="nome-cartao" placeholder="Ex: João da Silva">
+            </div>
+            <div class="form-group">
+                <label for="numero-cartao">Número do Cartão</label>
+                <input type="text" id="numero-cartao" placeholder="0000 0000 0000 0000">
+            </div>
+            <div class="form-group">
+                <label for="validade-cartao">Validade</label>
+                <input type="text" id="validade-cartao" placeholder="MM/AA">
+            </div>
+            <div class="form-group">
+                <label for="codigo-cartao">Código de Segurança (CVV)</label>
+                <input type="text" id="codigo-cartao" placeholder="123">
+            </div>
+            <div class="form-group">
+                <label for="parcelamento">Parcelamento</label>
+                <select id="parcelamento">
+                    <option value="">Selecione...</option>
+                    <option value="1">À vista (1x)</option>
+                    <option value="2">2x sem juros</option>
+                    <option value="3">3x sem juros</option>
+                    <option value="6">6x com juros</option>
+                    <option value="12">12x com juros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="window.location.href='comprovante.html'">Pagar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
