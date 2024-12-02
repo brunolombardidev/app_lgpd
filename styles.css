@@ -175,6 +175,77 @@ button:hover {
     font-size: 1rem;
 }
 
+/* Página de Termos */
+#termos-section {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.texto-termos {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.texto-termos p {
+    margin-bottom: 15px;
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox-group label {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Página de Login */
+#login-form {
+    margin-bottom: 20px;
+}
+
+#download-app {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#download-app p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.store-button {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.store-button:hover {
+    transform: scale(1.05);
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .plano {
