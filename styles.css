@@ -121,6 +121,7 @@ label {
     font-size: 0.9rem;
     margin-bottom: 5px;
     color: #555;
+    text-align: left;
 }
 
 input, select, button {
@@ -198,20 +199,27 @@ button:hover {
     margin-bottom: 15px;
 }
 
-.checkbox-group {
-    margin-bottom: 20px;
-}
+
 
 .checkbox-group div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     margin-bottom: 10px;
 }
 
-.checkbox-group label {
-    font-size: 0.9rem;
-    color: #333;
+/* Ajustes finais do checkbox */
+.final-termo {
+    text-align: center;
+}
+
+.final-termo div {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.final-termo input[type="checkbox"]:disabled {
+    cursor: not-allowed;
+    margin-bottom: 5px;
+    width: 40px;
 }
 
 /* Página de Login */
@@ -244,6 +252,56 @@ button:hover {
 
 .store-button:hover {
     transform: scale(1.05);
+}
+
+/* Trilho de Conformidade */
+#trilho-conformidade {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.etapa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.etapa span {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.etapa.pendente {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.etapa.pendente span {
+    color: #721c24;
+}
+
+.etapa.concluida {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.etapa.concluida span {
+    color: #155724;
+}
+
+.etapa:hover {
+    transform: scale(1.02);
 }
 
 /* Responsividade */
