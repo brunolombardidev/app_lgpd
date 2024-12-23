@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Configuração de Perfil</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <header>
-        <h1>Cadastro da Empresa</h1>
+        <h1>Configuração de Perfil</h1>
         <p>Preencha as informações abaixo para continuar.</p>
     </header>
 
     <main>
         <form id="cadastro-form">
             <div class="form-group">
-                <label for="nome">Nome da Startup</label>
+                <label for="nome">Nome da Empresa</label>
                 <input type="text" id="nome" placeholder="Ex: TechVision">
             </div>
             <div class="form-group">
@@ -38,7 +38,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="estrutura">Estrutura da Startup</label>
+                <label for="estrutura">Estrutura da Empresa</label>
                 <select id="estrutura">
                     <option value="">Selecione...</option>
                     <option value="micro">Micro (até 10 funcionários)</option>
@@ -55,19 +55,40 @@
                     <option value="ambos">Ambos</option>
                 </select>
             </div>
-            <div class="form-group checkbox-group">
-                <label>Utiliza Inteligência Artificial?</label>
+            <hr>
+            <div class="form-group radio-group">
+                <label>Sua empresa possui Website?</label>
                 <div>
-                    <input type="checkbox" id="ia-sim">
-                    <label for="ia-sim">Sim</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="ia-nao">
-                    <label for="ia-nao">Não</label>
+                    <label for="site-sim">
+                        <input type="radio" class="checkbox" value="site-sim" name="site">
+                        Sim
+                    </label>
+                    <label for="site-nao">
+                        <input type="radio" class="checkbox" value="site-nao" name="site">
+                        Não
+                    </label>
                 </div>
             </div>
             <div class="form-group">
-                <button type="button" onclick="window.location.href='termos.html'">Contratar</button>
+                <label for="site-tem">Se possui Website, informe a URL abaixo:</label>
+                <input type="text" id="site-url" placeholder="Ex: www.meusite.com.br">
+            </div>
+            <hr>
+            <div class="form-group radio-group">
+                <label>Utiliza Inteligência Artificial como base para o funcionamento do seu negócio?</label>
+                <div>
+                    <label for="ia-sim">
+                        <input type="radio" class="checkbox" value="ia-sim" name="ia">
+                        Sim
+                    </label>
+                    <label for="ia-nao">
+                        <input type="radio" class="checkbox" value="ia-nao" name="ia">
+                        Não
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="window.location.href='termos.html'">Contratar Plano</button>
             </div>
         </form>
     </main>
