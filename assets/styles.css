@@ -1,0 +1,54 @@
+#diagnostico-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filtro-categorias {
+    margin-bottom: 20px;
+  }
+  
+  .filtro-categorias select {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  .categoria {
+    
+  }
+  
+  .questao {
+    margin-bottom: 20px;
+  }
+  
+  .questao p {
+    font-weight: bold;
+  }
+  
+  .opcoes label {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .submit-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
