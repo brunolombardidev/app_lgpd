@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planos</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
     <header>
@@ -13,10 +13,10 @@
 
     <!-- Vídeo -->
     <section id="video-section">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/GV3HUDMQ-F8?si=rbsJHlu67Epw2GlX" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
+        <div class="bloco-video">
+            <iframe class="videos" src="https://www.youtube.com/embed/GV3HUDMQ-F8?si=rbsJHlu67Epw2GlX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
     </section>
 
     <!-- Comparação de Planos -->
@@ -30,7 +30,7 @@
                     <li>1 GB de armazenamento</li>
                 </ul>
                 <p class="preco">R$ 49,90/mês</p>
-                <button onclick="window.location.href='cadastro_rapido.html'">Assinar</button>
+                <button button type="button" class="bttn-secundario" onclick="window.location.href='cadastro_rapido.html'">Assinar</button>
             </div>
             <div class="plano destaque">
                 <h2>Premium</h2>
@@ -40,7 +40,7 @@
                     <li>10 GB de armazenamento</li>
                 </ul>
                 <p class="preco">R$ 99,90/mês</p>
-                <button onclick="window.location.href='cadastro_rapido.html'">Assinar</button>
+                <button button type="button" class="bttn-principal" onclick="window.location.href='cadastro_rapido.html'">Assinar</button>
             </div>
             <div class="plano">
                 <h2>Empresarial</h2>
@@ -50,7 +50,7 @@
                     <li>Armazenamento ilimitado</li>
                 </ul>
                 <p class="preco">R$ 199,90/mês</p>
-                <button onclick="window.location.href='cadastro_rapido.html'">Assinar</button>
+                <button button type="button" class="bttn-secundario" onclick="window.location.href='cadastro_rapido.html'">Assinar</button>
             </div>
         </div>
     </section>
