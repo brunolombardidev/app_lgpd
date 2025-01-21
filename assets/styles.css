@@ -66,6 +66,10 @@
             border: 0.02rem solid #dddddd;
         }
 
+        .separador {
+            margin: 40px 0;
+        }
+
     /* Destaque */
 
         .destaque {
@@ -442,28 +446,29 @@
 /* Mapa de Maturidade */
 
 /* Grid Responsiva para Gráficos */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
 
-.categoria-maturidade {
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .categoria-maturidade {
+    flex: 1 1 calc(25% - 20px); /* Cada gráfico ocupa 25% da largura menos margem */
+    margin: 10px;
+    max-width: 250px; /* Limita o tamanho máximo */
     text-align: center;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+  }
+  
+  .categoria-maturidade canvas {
+    width: 100%;
+    height: auto;
+  }
+  
 
 .categoria-maturidade h2 {
     font-size: 1.2rem;
     margin-bottom: 15px;
-}
-
-.categoria-maturidade canvas {
-    margin: 0 auto;
-    display: block;
 }
 
 
