@@ -1,0 +1,57 @@
+/* Removendo a importação duplicada da fonte Inter */
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Existing root styles... */
+}
+
+.dark {
+  /* Existing dark styles... */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 24px; /* Reduced from 28px */
+}
+
+h2 {
+  font-size: 20px; /* Reduced from 24px */
+}
+
+h3 {
+  font-size: 18px; /* Reduced from 22px */
+}
+
+h4,
+h5,
+h6 {
+  font-size: 16px; /* Reduced from 20px */
+}
+
+input {
+  font-size: 12px;
+  padding: 8px 16px;
+}
+
+select option {
+  color: #6b7280;
+}
+
+/* Esconder a barra de rolagem mas manter a funcionalidade */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
